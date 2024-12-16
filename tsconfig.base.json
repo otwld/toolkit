@@ -1,0 +1,34 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@otwld/nestjs-auth": ["libs/nestjs-auth/src/index.ts"],
+      "@otwld/nestjs-geolocation": ["libs/nestjs-geolocation/src/index.ts"],
+      "@otwld/nestjs-graphql": ["libs/nestjs-graphql/src/index.ts"],
+      "@otwld/nestjs-mongodb": ["libs/nestjs-mongodb/src/index.ts"],
+      "@otwld/nestjs-queue": ["libs/nestjs-queue/src/index.ts"],
+      "@otwld/nestjs-storage": ["libs/nestjs-storage/src/index.ts"],
+      "@otwld/ng-auth": ["libs/ng-auth/src/index.ts"],
+      "@otwld/ng-cdk": ["libs/ng-cdk/src/index.ts"],
+      "@otwld/ng-graphql": ["libs/ng-graphql/src/index.ts"],
+      "@otwld/ng-kit": ["libs/ng-kit/src/index.ts"],
+      "@otwld/ng-storage": ["libs/ng-storage/src/index.ts"],
+      "@otwld/ng-storybook": ["libs/ng-storybook/src/index.ts"],
+      "@otwld/ng-theme": ["libs/ng-theme/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

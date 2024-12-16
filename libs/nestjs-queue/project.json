@@ -1,0 +1,33 @@
+{
+  "name": "nestjs-queue",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/nestjs-queue/src",
+  "projectType": "library",
+  "release": {
+    "version": {
+      "generatorOptions": {
+        "packageRoot": "dist/{projectRoot}",
+        "currentVersionResolver": "git-tag"
+      }
+    }
+  },
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/nestjs-queue",
+        "tsConfig": "libs/nestjs-queue/tsconfig.lib.json",
+        "packageJson": "libs/nestjs-queue/package.json",
+        "main": "libs/nestjs-queue/src/index.ts",
+        "assets": ["libs/nestjs-queue/*.md"]
+      }
+    },
+    "nx-release-publish": {
+      "options": {
+        "packageRoot": "dist/{projectRoot}"
+      }
+    }
+  }
+}

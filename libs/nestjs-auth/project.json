@@ -1,0 +1,33 @@
+{
+  "name": "nestjs-auth",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/nestjs-auth/src",
+  "projectType": "library",
+  "release": {
+    "version": {
+      "generatorOptions": {
+        "packageRoot": "dist/{projectRoot}",
+        "currentVersionResolver": "git-tag"
+      }
+    }
+  },
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/nestjs-auth",
+        "tsConfig": "libs/nestjs-auth/tsconfig.lib.json",
+        "packageJson": "libs/nestjs-auth/package.json",
+        "main": "libs/nestjs-auth/src/index.ts",
+        "assets": ["libs/nestjs-auth/*.md"]
+      }
+    },
+    "nx-release-publish": {
+      "options": {
+        "packageRoot": "dist/{projectRoot}"
+      }
+    }
+  }
+}

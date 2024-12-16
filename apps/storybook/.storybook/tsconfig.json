@@ -1,0 +1,21 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "emitDecoratorMetadata": true
+  },
+  "exclude": ["../**/*.spec.ts"],
+  "include": [
+    "../src/**/*.stories.ts",
+    "../src/**/*.stories.js",
+    "../src/**/*.stories.jsx",
+    "../src/**/*.stories.tsx",
+    "../src/**/*.stories.mdx",
+    "*.js",
+    "*.ts",
+    "../../../libs/ng-*/**/*.stories.ts",
+    "../../../libs/ng-*/**/*.stories.js",
+    "../../../libs/ng-*/**/*.stories.jsx",
+    "../../../libs/ng-*/**/*.stories.tsx",
+    "../../../libs/ng-*/**/*.stories.mdx"
+  ]
+}
